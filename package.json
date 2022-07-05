@@ -13,7 +13,7 @@
     "test": "turbo run test",
     "lint": "turbo run lint",
     "dev": "turbo run dev",
-    "deploy-fe": "turbo run build --filter=frontend^...",
+    "deploy-fe": "turbo run build --filter=frontend...",
     "deploy-be": "turbo run build --filter=backend"
   },
   "turbo": {
