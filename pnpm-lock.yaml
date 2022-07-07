@@ -10,7 +10,7 @@ importers:
       pnpm: 7.5.0
       turbo: 1.3.1
 
-  backend:
+  app/backend:
     specifiers:
       '@adonisjs/assembler': ^5.8.0
       '@adonisjs/core': ^5.8.4
@@ -51,7 +51,7 @@ importers:
       youch: 3.2.0
       youch-terminal: 2.1.4
 
-  frontend:
+  app/frontend:
     specifiers:
       '@preact/preset-vite': ^2.1.5
       preact: ^10.5.15
@@ -60,13 +60,13 @@ importers:
       vite: ^2.9.9
     dependencies:
       preact: 10.8.2
-      ui: link:../ui
+      ui: link:../../packages/ui
     devDependencies:
       '@preact/preset-vite': 2.3.0_preact@10.8.2+vite@2.9.13
       typescript: 4.7.4
       vite: 2.9.13
 
-  ui:
+  packages/ui:
     specifiers:
       '@preact/preset-vite': ^2.1.5
       preact: ^10.5.15
