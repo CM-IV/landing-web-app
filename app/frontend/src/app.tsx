@@ -6,7 +6,7 @@ export function App() {
     <>
       <Logo />
       <p>Hello Vite + Preact!</p>
-      <Button>Hello Turborepo!</Button>
+      <Button>Changed!</Button>
       <p>
         <a
           class="link"

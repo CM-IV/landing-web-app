@@ -12,8 +12,11 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['preact'],
+      external: [
+        'preact'
+      ],
     },
+    outDir: ".ui"
   },
   server: {
     port: 4444

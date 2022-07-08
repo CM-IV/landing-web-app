@@ -4,57 +4,16 @@
   "description": "",
   "main": "index.js",
   "workspace": [
-    "app/frontend",
-    "app/backend",
-    "packages/ui"
+    "app/*",
+    "packages/*"
   ],
   "scripts": {
     "build-all": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "dev": "turbo run dev",
-    "deploy-fe": "turbo run build --filter=frontend...",
-    "deploy-be": "turbo run build --filter=backend"
-  },
-  "turbo": {
-    "pipeline": {
-      "dev": {
-        "cache": false
-      },
-      "build": {
-        "dependsOn": [
-          "^build"
-        ],
-        "outputs": [
-          "dist/**",
-          "build/**",
-          ".ui/**"
-        ]
-      },
-      "test": {
-        "dependsOn": [
-          "build"
-        ],
-        "outputs": [],
-        "inputs": [
-          "src/**/*.tsx",
-          "src/**/*.ts",
-          "test/**/*.ts",
-          "test/**/*.tsx"
-        ]
-      },
-      "lint": {
-        "outputs": []
-      },
-      "deploy": {
-        "dependsOn": [
-          "build",
-          "test",
-          "lint"
-        ],
-        "outputs": []
-      }
-    }
+    "deploy:frontend": "turbo run build --filter=frontend...",
+    "deploy:backend": "turbo run build --filter=backend"
   },
   "keywords": [],
   "author": "",
