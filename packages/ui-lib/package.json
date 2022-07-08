@@ -1,7 +1,7 @@
 {
-  "name": "ui",
+  "name": "ui-lib",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "tsc && vite build"
   },

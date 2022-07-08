@@ -1,5 +1,5 @@
 import { Logo } from './logo'
-import { Button } from 'ui'
+import { Button } from "ui-lib"
 
 export function App() {
   return (

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "preact": "^10.5.15",
-    "ui": "*"
+    "ui-lib": "workspace:*"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.1.5",

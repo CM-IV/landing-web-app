@@ -1,3 +1,4 @@
 packages:
-  - "packages/*"
-  - "app/*"
+  - packages/ui-lib
+  - app/frontend
+  - app/backend

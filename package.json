@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "workspace": [
-    "app/*",
-    "packages/*"
+    "app/frontend",
+    "app/backend",
+    "packages/ui-lib"
   ],
   "scripts": {
     "build-all": "turbo run build",
