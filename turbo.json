@@ -9,8 +9,7 @@
       ],
       "outputs": [
         "dist/**",
-        "build/**",
-        ".ui/**"
+        "build/**"
       ]
     },
     "test": {

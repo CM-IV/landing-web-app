@@ -5,8 +5,7 @@
   "main": "index.js",
   "workspace": [
     "app/frontend",
-    "app/backend",
-    "packages/ui-lib"
+    "app/backend"
   ],
   "scripts": {
     "build-all": "turbo run build",

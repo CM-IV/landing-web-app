@@ -29,7 +29,6 @@ Route.group(() => {
 
     return report.healthy ? response.ok(report) : response.badRequest(report);
   });
-
   //Test
   Route.get("test", async ({ response }) => {
     response.json({
@@ -38,4 +37,7 @@ Route.group(() => {
 
     return response.status(200);
   });
+
+  Route.resource("todos", "TodosController").apiOnly();
+  
 }).prefix("/api");

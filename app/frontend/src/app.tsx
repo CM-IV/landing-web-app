@@ -1,22 +1,14 @@
-import { Logo } from './logo'
-import { Button } from "ui-lib"
+import { Route, Switch } from "wouter-preact";
+import Home from "./pages";
+import NotFound from "./pages/_404";
 
-export function App() {
+const App = () => {
   return (
-    <>
-      <Logo />
-      <p>Hello Vite + Preact!</p>
-      <Button>Changed!</Button>
-      <p>
-        <a
-          class="link"
-          href="https://preactjs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Preact
-        </a>
-      </p>
-    </>
+    <Switch>
+      <Route path="/" component={Home}></Route>
+      <Route component={NotFound}></Route>
+    </Switch>
   )
 }
+
+export default App;
