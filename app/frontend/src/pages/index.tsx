@@ -1,4 +1,4 @@
-import Todos from "../components/getTodos";
+import Todos from "../components/todosComponent";
 import Layout from "../layouts/mainLayout";
 
 

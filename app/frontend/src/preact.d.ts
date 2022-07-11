@@ -1,8 +1,7 @@
 import JSX = preact.JSX
 
-interface Todos {
-    id: number;
-    userId: number;
+interface Todo {
+    readonly id: number;
     title: string;
     completed: boolean;
 }

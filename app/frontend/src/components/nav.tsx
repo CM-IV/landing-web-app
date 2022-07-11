@@ -19,7 +19,7 @@ const Nav = () => {
           />
         </section>
         <section class="navbar-section">
-          <Link to="#" class="btn btn-link">GitHub</Link>
+          <Link to="/dashboard" class="btn btn-link">Dashboard</Link>
         </section>
       </nav>
     </Fragment>

@@ -3,8 +3,11 @@ import { schema, rules } from "@ioc:Adonis/Core/Validator";
 import Todo from '../models/Todo';
 
 export default class TodosController {
-    public async index() {
-        return Todo.all();
+    public async index({ request }: HttpContextContract) {
+        const page = request.input("page", 1);
+        const limit = request.input("per_page", 6);
+
+        return Todo.query().paginate(page, limit);
     }
 
     public async store({ request, response }) {

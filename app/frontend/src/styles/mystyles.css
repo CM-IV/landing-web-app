@@ -39,12 +39,36 @@ a {
   padding-top: 2em;
 }
 
-.card {
-  margin-bottom: 2em;
+.popbtn {
+  padding-right: 4px;
 }
 
-.card-subtitle, .card-p {
+.tile {
+  margin-bottom: 2em;
+  background-color: #fff;
+  position: relative;
+}
+
+.centered-edit {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+}
+
+.centered-delete {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.text-black {
   color: black;
+}
+
+.column {
+  margin: auto;
 }
 
 /* .navbar-burger-toggle + .navbar-burger {

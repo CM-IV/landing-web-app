@@ -39,5 +39,6 @@ Route.group(() => {
   });
 
   Route.resource("todos", "TodosController").apiOnly();
+  Route.resource("links", "LinksController").apiOnly();
   
 }).prefix("/api");

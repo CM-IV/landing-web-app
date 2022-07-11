@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "workspace": [
-    "app/frontend",
-    "app/backend"
+    "app/*"
   ],
   "scripts": {
     "build-all": "turbo run build",
     "test": "turbo run test",
     "lint": "turbo run lint",
     "dev": "turbo run dev",
-    "deploy:frontend": "turbo run build --filter=frontend...",
+    "deploy:frontend": "turbo run build --filter=frontend",
     "deploy:backend": "turbo run build --filter=backend"
   },
   "keywords": [],
